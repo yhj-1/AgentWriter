@@ -1,0 +1,181 @@
+/**
+ * 公共样式类
+ */
+
+/* ==================== 按钮样式 ==================== */
+
+/* 渐变主按钮 */
+.btn-primary-gradient {
+  height: 44px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+  box-shadow: var(--shadow-green) !important;
+  transition: opacity var(--transition-normal) !important;
+}
+
+.btn-primary-gradient:hover,
+.btn-primary-gradient:focus,
+.btn-primary-gradient:active {
+  background: var(--gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+  box-shadow: var(--shadow-green) !important;
+  opacity: 0.92;
+}
+
+.btn-primary-gradient:disabled,
+.btn-primary-gradient.ant-btn-disabled {
+  background: var(--color-border) !important;
+  box-shadow: none !important;
+  opacity: 0.6;
+  color: var(--color-text-muted) !important;
+}
+
+/* 隐藏波纹效果 */
+.btn-primary-gradient :deep(.ant-wave) {
+  display: none;
+}
+
+/* ==================== 空状态样式 ==================== */
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-state .empty-icon {
+  font-size: 48px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.empty-state .empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 8px;
+}
+
+.empty-state .empty-desc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin: 0 0 20px;
+}
+
+/* ==================== 页面头部样式 ==================== */
+
+.page-header {
+  background: var(--gradient-hero);
+  padding: 32px 20px;
+  margin-bottom: 24px;
+}
+
+.page-header .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+}
+
+.page-header .page-subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ==================== 容器样式 ==================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==================== 表格样式 ==================== */
+
+.table-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.table-card :deep(.ant-card-body) {
+  padding: 0;
+}
+
+/* ==================== 筛选栏样式 ==================== */
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+/* ==================== Markdown 内容样式 ==================== */
+
+.markdown-content {
+  line-height: 1.8;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.markdown-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 28px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.markdown-content h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 22px 0 10px;
+  color: var(--color-text);
+}
+
+.markdown-content p {
+  margin-bottom: 14px;
+  text-indent: 2em;
+  color: var(--color-text);
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 14px;
+  padding-left: 2em;
+}
+
+.markdown-content li {
+  margin-bottom: 6px;
+  color: var(--color-text);
+}
+
+.markdown-content img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
